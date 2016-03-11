@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use vim as that is what I am familiar with.
 
 --
 
@@ -67,6 +67,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use Spyder. It comes installed with Anaconda, offers IPython integration, and has many features that make writing code more efficient, especially for scientific programming. A couple of useful keyboard shortcuts are "ctrl + F10" and "ctrl + F11" which, respectively, allow you to run code line by line and step into a function and run each line individually. Other useful shortcuts are "ctrl + F5", which enters the debugger, and "F5", which runs the entire program. The size and positions of the console and variable explorer can be changed (either using the mouse or from the "View" toolbar). In addition, the color template and syntax highlighting scheme can also be customized by going to Tools -> Preferences.
 
  
