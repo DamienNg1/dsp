@@ -29,12 +29,13 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-1. `ls` - Lists directory contents 
+
+1. `ls` - Lists directory contents
 2. `ls -a` - List all directory contents (including hidden files)
 3. `ls -l` - Lists all directory contents in long format
 4. `ls -lh` - Same as above, except in human readable format
 5. `ls -lah` - List all directory contents in human readable, long format 
-6. `ls -t` - Lists directory contents sorted by modification time 
+6. `ls -t` - Lists directory contents sorted by modification time
 7. `ls -Glp` - `G` inhibits the display of group information, `l` displays the contents in long format, and `p` shows which files have an indicator such as '/'
 
 ---
