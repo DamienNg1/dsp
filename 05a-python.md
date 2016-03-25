@@ -26,7 +26,10 @@ Lists and sets are both mutable. However, sets can only contain unique objects a
 a = set(["California", "Illinois", "New York"])
 b = set(["California"])
 `
+
+
 a.intersection(b) will produce the elements that are common to both sets - in this case, California. Sets can also be used to find the non duplicate items of a list. 
+
 ---
 
 ###Q3. Lambda Function
