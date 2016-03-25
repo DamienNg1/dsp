@@ -20,8 +20,13 @@ Lists and tuples are both data structures that store ordered sequences of object
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-(Answer)
+Lists and sets are both mutable. However, sets can only contain unique objects and are unordered. In addition, sets require all items to be hashable. As a result, sets tend to be faster than lists for finding an element, especially for larger lists. In the worst case for lists, the required element might be right at the end, so the entire list would have to be searched through. Sets can be used to perform operations such as unions and intersections. For example:
 
+`
+a = set(["California", "Illinois", "New York"])
+b = set(["California"])
+`
+a.intersection(b) will produce the elements that are common to both sets - in this case, California. Sets can also be used to find the non duplicate items of a list. 
 ---
 
 ###Q3. Lambda Function
