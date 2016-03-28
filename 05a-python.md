@@ -63,7 +63,17 @@ Here, `lambda` is passing the index of the object that is being iterated over - 
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+A list comprehension is a way of constructing a list using set builder notation. It is a succinct way to generate a list in one line. The following list comprehension generates a list that contains the cubes of all numbers from 0 to 9.
+
+`cubes = [i**3 for i in range(10)]`
+
+An equivalent list can be generated using the `map` function as follows:
+
+`list(map(lambda i: i**3, range(10)))`
+
+Finally, the list can be further refined using `filter`. The below list will only contain those values in `cubes` that are less than 100.
+
+`list(filter(lambda i: i < 100, cubes))`
 
 ---
 
