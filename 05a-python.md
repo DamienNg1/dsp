@@ -55,6 +55,8 @@ The function returns the following output, with the ages of the students sorted 
 `[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]`
 
 Here, `lambda` is passing the index of the object that is being iterated over - in this case, `student_tuples` - to the key parameter of the sorted function. 
+
+
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
