@@ -36,8 +36,25 @@ a.intersection(b) will produce the elements that are common to both sets - in th
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+`lambda` in Python allows for the creation of compact, one-line functions that are anonymous (not bound to a name). In particular, they do not have a return statement. On their own, they are useful at simplifying code as shown in the below example, which is a lambda function that returns the cube of x:
 
+`cube = lambda x: x**3`
+
+The above line of code is simpler (but not by a lot) than having to define a new function with `def` that then returns a value. Lambdas become much more powerful when used as parameters in other functions such as `sorted`, `map`, and `filter`, with which one-line functions can be created that would otherwise require some kind of loop. The below example uses a lambda function in the `key` argument to `sorted` (from https://wiki.python.org/moin/HowTo/Sorting):
+
+```
+student_tuples = [
+        ('john', 'A', 15),
+        ('jane', 'B', 12),
+        ('dave', 'B', 10),
+]
+sorted(student_tuples, key = lambda student: student[2])   # sort by age
+```
+The function returns the following output, with the ages of the students sorted in ascending order:
+
+`[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]`
+
+Here, `lambda` is passing the index of the object that is being iterated over - in this case, `student_tuples` - to the key parameter of the sorted function. 
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
