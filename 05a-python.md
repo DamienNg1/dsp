@@ -75,6 +75,14 @@ Finally, the list can be further refined using `filter`. The below list will onl
 
 `list(filter(lambda i: i < 100, cubes))`
 
+The syntax for set comprehensions is identical to list comprehensions, except they use `{}` instead of `[]`:
+
+`cubes_set = {i**3 for i in range(10)}`
+
+A dictionary comprehension is used to generate a new dictionary as shown below:
+
+`cubes_dict = {i: i**3 for i in range(10)}`
+
 ---
 
 ###Complete the following problems by editing the files below:
