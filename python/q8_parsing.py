@@ -7,13 +7,12 @@
 # The below skeleton is optional.  You can use it or you can write the script with an approach of your choice.
 
 
-import csv
+import pandas as pd
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
+df = pd.read_csv('dsp/python/football.csv') #Read the data into a pandas dataframe
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
+df["Goal_Difference"] = df['Goals'] - df['Goals Allowed'] #Create Goal Difference column
 
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+team_index = df["Goal_Difference"].abs().idxmin() #Identify index which has smallest Goal Difference 
+
+print df.iloc[team_index] #Index 7, Team Aston Villa has the smallest goal difference
