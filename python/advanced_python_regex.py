@@ -57,3 +57,13 @@ print "Assistant Professor of Biostatistics: " + str(Assistant)
 email = []
 for row in data:
     email.append(row[3].strip())
+    
+#Q4
+domains = []
+for email in emails:
+    domains.append(email.split('@'))
+
+unique = []
+for domain in domains:
+    unique.append(domain[1])
+print set(unique)
