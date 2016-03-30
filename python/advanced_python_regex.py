@@ -52,3 +52,8 @@ for row in data:
 print "Professor of Biostatistics: " + str(Professor)
 print "Associate Professor of Biostatistics: " + str(Associate)
 print "Assistant Professor of Biostatistics: " + str(Assistant)
+
+#Q3
+email = []
+for row in data:
+    email.append(row[3].strip())
