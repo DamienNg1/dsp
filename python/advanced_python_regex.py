@@ -38,4 +38,17 @@ print "BSEd: " + str(BSEd)
 print "MS: " + str(MS)
 
 #Q2
+Professor = 0
+Associate = 0
+Assistant = 0
+for row in data:
+    if re.search("^Associate", row[2].strip()) != None:
+        Associate += 1
+    if re.search("^Assistant", row[2].strip()) != None:
+        Assistant += 1
+    if re.search("^Professor", row[2].strip()) != None:
+        Professor += 1
 
+print "Professor of Biostatistics: " + str(Professor)
+print "Associate Professor of Biostatistics: " + str(Associate)
+print "Assistant Professor of Biostatistics: " + str(Assistant)
